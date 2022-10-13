@@ -7,10 +7,8 @@
 using namespace std;
 int main()
 {
-    Minterm m(10);
+    Minterm m(6, 5);
     cout << m.Binary_Representation << endl;
-    cout << m.Var_Representation << endl;
-    
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
