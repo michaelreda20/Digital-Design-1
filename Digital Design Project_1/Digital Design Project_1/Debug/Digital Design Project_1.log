@@ -1,6 +1,5 @@
-﻿  Dont_care_terms.cpp
-D:\AUC\Fall 22\Digital Design\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Dont_care_terms.cpp(3,11): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
-  Minterm.cpp
-D:\AUC\Fall 22\Digital Design\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Minterm.cpp(3,11): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
-  Generating Code...
+﻿  Run_program.cpp
+D:\AUC\Fall 22\Digital Design\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Run_program.cpp(5,20): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Run_program.cpp(31,22): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Run_program.cpp(47,22): warning C4018: '<': signed/unsigned mismatch
   Digital Design Project_1.vcxproj -> D:\AUC\Fall 22\Digital Design\Digital-Design-1\Digital Design Project_1\Debug\Digital Design Project_1.exe

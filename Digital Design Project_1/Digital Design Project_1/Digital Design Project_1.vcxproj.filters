@@ -27,6 +27,9 @@
     <ClCompile Include="Dont_care_terms.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Run_program.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="term.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Dont_care_terms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Run_program.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

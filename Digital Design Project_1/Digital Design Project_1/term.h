@@ -5,9 +5,9 @@ using namespace std;
 class term
 {
 public:
+	int var_numbers = 0;
 	long number = 0;
 	string Var_Representation;
 	string Binary_Representation;
 	void Initialize();
 };
-

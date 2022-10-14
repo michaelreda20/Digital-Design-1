@@ -4,12 +4,22 @@
 #include <iostream>
 #include "term.h"
 #include "Minterm.h"
+#include "Run_program.h"
 using namespace std;
 int main()
 {
-    Minterm m(10);
-    cout << m.Binary_Representation << endl;
-    cout << m.Var_Representation << endl;
+    string in;
+    cin >> in;
+    Run_program R(in);
+    R.Run();
+    cout << endl;
+    for (int i = 0; i < R.Minterms.size(); i++) {
+        cout << R.Minterms[i].Binary_Representation << endl;
+    }
+    cout << endl;
+    for (int i = 0; i < R.Dont_cares.size(); i++) {
+        cout << R.Dont_cares[i].Binary_Representation << endl;
+    }
     
 }
 
