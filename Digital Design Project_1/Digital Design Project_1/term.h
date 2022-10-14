@@ -11,4 +11,3 @@ public:
 	string Binary_Representation;
 	void Initialize();
 };
-

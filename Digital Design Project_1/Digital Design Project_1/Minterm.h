@@ -8,4 +8,3 @@ class Minterm : public term
 public:
 	Minterm(long long num, int var_num);
 };
-

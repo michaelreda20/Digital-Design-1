@@ -2,7 +2,7 @@
 void term::Initialize() {
 	Binary_Representation = "";
 	long temp = number;
-	
+
 	while (temp > 0) {
 		Binary_Representation = to_string(temp % 2) + Binary_Representation;
 		temp = temp / 2;
@@ -21,4 +21,4 @@ void term::Initialize() {
 		}
 	}
 
- }
+}
