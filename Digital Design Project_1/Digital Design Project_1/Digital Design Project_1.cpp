@@ -2,31 +2,29 @@
 //
 
 #include <iostream>
-#include "term.h"
-#include "Minterm.h"
+#include "table.h"
 #include "Run_program.h"
 using namespace std;
 int main()
 {
     string path ="input.txt";
-    Run_program run;
-    run.Run();
-    vector<term> printterm =run.ip.PIs;
-    for ( int i=0; i<printterm.size();i++)
-    {
-        cout<<printterm[i].Binary_Representation<<endl;
-    }
+   Run_program run;
+    table t;
+    cout << t.zero();
 
+ run.input_file_path = path;
+ run.Run();
+ cout << endl;
+    vector<term> printterm =run.PIs;
+    //cout << printterm.size();
+    vector<term>::iterator it = printterm.begin();
+    for (it; it!=printterm.end();it++)
+    {
+        term t = *it;
+        cout<<t.Binary_Representation<<endl;
+    }
+    
     
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

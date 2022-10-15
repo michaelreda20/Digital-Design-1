@@ -1,24 +1,24 @@
 #include "Run_program.h"
 #include <fstream>
-Run_program::Run_program(string in) {
+
+/*Run_program::Run_program(string in) {
 	input_file_path = in;
-	for (int i = 0; i < in.length(); i++) {
-		if (input_file_path[i] == '\'') {
-			input_file_path[i] = '/';
-		}
-	}
-}
-void Run_program::Run() {
+}*/
+int Run_program::Run() {
 	fillIn();
-	ip.minterms=Minterms;
-	ip.Dont_cares=Dont_cares;
-	ip.Calc();
+	
+	table t;
+	t.minterms = Minterms;
+	t.Dont_cares = Dont_cares;
+	t.Calculate();
+	PIs = t.PIs;
+	return 0;
 }
 
-Run_program::Run_program()
+/*Run_program::Run_program()
 {
-// hiiiiiii
-}
+
+}*/
 
 void Run_program::fillIn() {
 	ifstream input;

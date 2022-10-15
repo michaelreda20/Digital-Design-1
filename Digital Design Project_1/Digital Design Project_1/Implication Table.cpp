@@ -1,24 +1,19 @@
 #include"Implication Table.h"
-#include<iterator>
-implication_table::implication_table(vector <Minterm> m, vector <Dont_care_terms> d )
-{
- minterms = m;
- Dont_cares = d;
-for(int i = 0; i < minterms.size(); i++){
-    curr[minterms[i].ones].push_back(minterms[i]);
-}
-for(int i = 0; i < Dont_cares.size(); i++){
-    curr[Dont_cares[i].ones].push_back(Dont_cares[i]);
-}
 
+implication_table::implication_table() {
+    cout << "hellor";
 }
-
-implication_table::implication_table()
-{
-    
+int implication_table::zero() {
+    return 0;
 }
-void implication_table::Calc(){
-    
+void implication_table::Calculate(){
+    /*
+    for (int i = 0; i < minterms.size(); i++) {
+        curr[minterms[i].ones].push_back(minterms[i]);
+    }
+    for (int i = 0; i < Dont_cares.size(); i++) {
+        curr[Dont_cares[i].ones].push_back(Dont_cares[i]);
+    }
     while(New.size()!=0){
        New.clear();
 
@@ -45,7 +40,7 @@ void implication_table::Calc(){
     }
     curr = New;
     }
-   
-
+ 
+   */
     
 }
