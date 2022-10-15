@@ -8,18 +8,15 @@
 using namespace std;
 int main()
 {
-    string in;
-    cin >> in;
-    Run_program R(in);
-    R.Run();
-    cout << endl;
-    for (int i = 0; i < R.Minterms.size(); i++) {
-        cout << R.Minterms[i].Binary_Representation << endl;
+    string path ="input.txt";
+    Run_program run;
+    run.Run();
+    vector<term> printterm =run.ip.PIs;
+    for ( int i=0; i<printterm.size();i++)
+    {
+        cout<<printterm[i].Binary_Representation<<endl;
     }
-    cout << endl;
-    for (int i = 0; i < R.Dont_cares.size(); i++) {
-        cout << R.Dont_cares[i].Binary_Representation << endl;
-    }
+
     
 }
 

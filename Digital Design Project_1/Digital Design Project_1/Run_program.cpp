@@ -10,7 +10,16 @@ Run_program::Run_program(string in) {
 }
 void Run_program::Run() {
 	fillIn();
+	ip.minterms=Minterms;
+	ip.Dont_cares=Dont_cares;
+	ip.Calc();
 }
+
+Run_program::Run_program()
+{
+// hiiiiiii
+}
+
 void Run_program::fillIn() {
 	ifstream input;
 	input.open(input_file_path);

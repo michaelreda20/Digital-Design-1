@@ -3,6 +3,7 @@
 #include "Minterm.h"
 #include "Dont_care_terms.h"
 #include <vector>
+#include"Implication Table.h"
 using namespace std;
 class Run_program
 {
@@ -13,6 +14,7 @@ public:
 	Run_program(string file);
 	void Run();
 	void fillIn();
-	
+	implication_table ip;
+	Run_program();
 };
 

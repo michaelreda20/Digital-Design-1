@@ -20,5 +20,27 @@ void term::Initialize() {
 			Var_Representation += 39;
 		}
 	}
+	count_ones();
 
+}
+void term::count_ones(){
+	for(int i = 0; i < var_numbers; i++){
+		if(Binary_Representation[i]=='1'){
+			ones++;
+		}
+	}
+}
+pair<int, int> term::calc_distance(term another){
+	int distance= 0;
+	pair<int, int> res;
+	for(int i = 0; i < var_numbers; i++){
+		if(Binary_Representation[i] != another.Binary_Representation[i]){
+			if(distance ==0){
+				res.second = i;
+			}
+			distance ++;
+		}
+	}
+	res.first = distance;
+	return res;
 }
