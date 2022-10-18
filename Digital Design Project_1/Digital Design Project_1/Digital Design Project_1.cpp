@@ -21,7 +21,16 @@ int main()
     for (it; it!=printterm.end();it++)
     {
         term t = *it;
-        cout<<t.Binary_Representation<<endl;
+        cout << t.Binary_Representation << endl;
+        for (int i = 0; i < t.covered_terms.size(); ++i) {
+            cout << t.covered_terms[i].Binary_Representation << "  ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+
+    for (int i = 0; i < run.EPIs.size(); ++i) {
+        cout << run.EPIs[i].Binary_Representation << endl;
     }
     
     

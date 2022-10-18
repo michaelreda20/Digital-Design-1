@@ -3,6 +3,7 @@
 #include "Minterm.h"
 #include "Dont_care_terms.h"
 #include "table.h"
+#include "Coverage_Chart.h"
 #include <vector>
 
 
@@ -16,6 +17,8 @@ public:
 	int Run();
 	void fillIn();
 	vector<term> PIs;
+	vector<term> EPIs;
+
 //	Run_program();
 };
 

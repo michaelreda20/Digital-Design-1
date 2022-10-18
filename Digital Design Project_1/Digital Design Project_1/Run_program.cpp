@@ -12,6 +12,11 @@ int Run_program::Run() {
 	t.Dont_cares = Dont_cares;
 	t.Calculate();
 	PIs = t.PIs;
+	Coverage_Chart chart;
+	chart.PIs = PIs;
+	chart.populate_EPIs();
+	EPIs = chart.EPIs;
+
 	return 0;
 }
 

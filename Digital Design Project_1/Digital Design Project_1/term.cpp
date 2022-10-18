@@ -1,4 +1,5 @@
 #include "term.h"
+
 void term::Initialize() {
 	Binary_Representation = "";
 	long temp = number;

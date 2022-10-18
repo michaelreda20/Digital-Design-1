@@ -2,7 +2,6 @@
 #include <iostream>
 #include"Minterm.h"
 #include"Dont_care_terms.h"
-#include "term.h"
 #include <vector>
 #include<map>
 #include<set>
@@ -20,6 +19,5 @@ public:
     vector<term> PIs;
     map<string, bool> inserted;
     int zero();
-
 };
 
