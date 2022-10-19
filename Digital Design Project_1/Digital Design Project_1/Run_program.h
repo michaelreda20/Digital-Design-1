@@ -18,7 +18,7 @@ public:
 	void fillIn();
 	vector<term> PIs;
 	vector<term> EPIs;
-
+	vector<term> uncovered;
 //	Run_program();
 };
 

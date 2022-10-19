@@ -16,7 +16,7 @@ int Run_program::Run() {
 	chart.PIs = PIs;
 	chart.populate_EPIs();
 	EPIs = chart.EPIs;
-
+	uncovered = chart.uncovered;
 	return 0;
 }
 
@@ -31,7 +31,6 @@ void Run_program::fillIn() {
 	int line_count = 0;
 	string line;
 	int var_numbers= 0;
-	//cout << "here" << endl;
 	while (input)
 	{
 		

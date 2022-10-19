@@ -17,7 +17,6 @@ public:
     map<int, vector<term>> New;
     map<string, bool> visited;
     vector<term> PIs;
-    map<string, bool> inserted;
-    int zero();
+    //map<string, bool> inserted;
 };
 

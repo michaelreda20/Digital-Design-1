@@ -31,17 +31,27 @@ void term::count_ones(){
 		}
 	}
 }
-pair<int, int> term::calc_distance(term another){
+
+pair<int, int> term::calc_distance(term const& another){
 	int distance= 0;
 	pair<int, int> res;
 	for(int i = 0; i < var_numbers; i++){
 		if(Binary_Representation[i] != another.Binary_Representation[i]){
-			if(distance ==0){
-				res.second = i;
-			}
+			if (distance == 0)res.second = i;
 			distance ++;
 		}
 	}
 	res.first = distance;
 	return res;
+}
+
+term term::operator+(term const& another)
+{
+	term sum;
+	sum = *this;
+	sum.covered_minterms.insert(sum.covered_minterms.end(), another.covered_minterms.begin(), another.covered_minterms.end());
+	sum.covered_dont_cares.insert(sum.covered_dont_cares.end(), another.covered_dont_cares.begin(), another.covered_dont_cares.end());
+
+	sum.Binary_Representation[this->calc_distance(another).second] = '-';
+	return sum;
 }
