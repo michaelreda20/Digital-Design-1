@@ -12,8 +12,8 @@ class Coverage_Chart
 public:
 	vector<term> PIs;
 	vector<term> EPIs;
+	vector<term> uncovered;
 	map<string, vector<term>> chart;   
-	vector<term> minterms;
 	map<string, bool> visited;
 
 	void populate_EPIs();
