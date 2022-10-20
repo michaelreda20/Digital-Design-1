@@ -15,9 +15,9 @@ public:
 	string Binary_Representation;
 	vector<term> covered_minterms;
 	vector<term> covered_dont_cares;
-	void Initialize();
 	int ones = 0;
 
+	void Initialize();
 	void boolean_expression();
 	void count_ones();
 	pair<int, int> calc_distance(term const& another);

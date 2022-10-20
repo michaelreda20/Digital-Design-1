@@ -18,8 +18,10 @@ void table::Calculate() {
     while (New.size() != 0|| first) {
         first = false;
         New.clear();
-
-        int size = minterms[0].var_numbers;
+        int size = 0;
+        if (minterms.size() > 0) {
+            size = minterms[0].var_numbers;
+        }
         
         for (int i = 0; i < size; i++) {
             for (int j = 0; j != curr[i].size(); j++) {
