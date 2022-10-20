@@ -1,5 +1,4 @@
 #include "Run_program.h"
-#include <fstream>
 
 /*Run_program::Run_program(string in) {
 	input_file_path = in;
@@ -12,6 +11,11 @@ int Run_program::Run() {
 	t.Dont_cares = Dont_cares;
 	t.Calculate();
 	PIs = t.PIs;
+	Coverage_Chart chart;
+	chart.PIs = PIs;
+	chart.populate_EPIs();
+	EPIs = chart.EPIs;
+	uncovered = chart.uncovered;
 	return 0;
 }
 
@@ -26,7 +30,6 @@ void Run_program::fillIn() {
 	int line_count = 0;
 	string line;
 	int var_numbers= 0;
-	//cout << "here" << endl;
 	while (input)
 	{
 		
@@ -63,9 +66,11 @@ void Run_program::fillIn() {
 					temp += line[i];
 				}
 			}
-			Dont_care_terms d(stoi(temp), var_numbers);
-			Dont_cares.push_back(d);
-			temp = "";
+			if (temp != "") {
+				Dont_care_terms d(stoi(temp), var_numbers);
+				Dont_cares.push_back(d);
+				temp = "";
+			}
 			break;
 		}
 

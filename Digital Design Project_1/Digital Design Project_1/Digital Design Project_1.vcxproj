@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Coverage_Chart.cpp" />
     <ClCompile Include="Digital Design Project_1.cpp" />
     <ClCompile Include="Dont_care_terms.cpp" />
     <ClCompile Include="Minterm.cpp" />
@@ -147,11 +148,15 @@
     <ClCompile Include="term.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Coverage_Chart.h" />
     <ClInclude Include="Dont_care_terms.h" />
     <ClInclude Include="Minterm.h" />
     <ClInclude Include="Run_program.h" />
     <ClInclude Include="table.h" />
     <ClInclude Include="term.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

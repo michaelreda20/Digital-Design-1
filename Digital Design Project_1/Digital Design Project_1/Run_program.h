@@ -1,10 +1,7 @@
 #pragma once
-#include <iostream>
-#include "Minterm.h"
-#include "Dont_care_terms.h"
+#include <fstream>
 #include "table.h"
-#include <vector>
-
+#include "Coverage_Chart.h"
 
 using namespace std;
 class Run_program
@@ -16,6 +13,8 @@ public:
 	int Run();
 	void fillIn();
 	vector<term> PIs;
+	vector<term> EPIs;
+	vector<term> uncovered;
 //	Run_program();
 };
 
