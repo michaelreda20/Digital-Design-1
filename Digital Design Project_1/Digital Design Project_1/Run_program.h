@@ -15,6 +15,7 @@ public:
 	vector<term> PIs;
 	vector<term> EPIs;
 	vector<term> uncovered;
+	map<int, string> errors;
 //	Run_program();
 };
 

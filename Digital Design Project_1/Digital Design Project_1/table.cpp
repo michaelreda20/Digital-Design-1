@@ -34,9 +34,11 @@ void table::Calculate() {
                 }
             }
         }
-
-      for(int i = 0; i < size; i++){
+        
+      for(int i = 0; i <= size; i++){
+         
          for(int j = 0; j != curr[i].size(); j++){
+           
              if (!visited[curr[i][j].Binary_Representation]) {
                  PIs.push_back(curr[i][j]);
                  visited[curr[i][j].Binary_Representation] = true;
