@@ -1,8 +1,4 @@
 #pragma once
-#include <iostream>
-#include <vector>
-#include <map>
-#include <iterator>
 #include "term.h"
 using namespace std;
 
