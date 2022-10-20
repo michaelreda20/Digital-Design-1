@@ -5,17 +5,19 @@
 }*/
 int Run_program::Run() {
 	fillIn();
+	if (!Minterms.size() == 0) {
+		table t;
+		t.minterms = Minterms;
+		t.Dont_cares = Dont_cares;
+		t.Calculate();
+		PIs = t.PIs;
+		Coverage_Chart chart;
+		chart.PIs = PIs;
+		chart.populate_EPIs();
+		EPIs = chart.EPIs;
+		uncovered = chart.uncovered;
+	}
 	
-	table t;
-	t.minterms = Minterms;
-	t.Dont_cares = Dont_cares;
-	t.Calculate();
-	PIs = t.PIs;
-	Coverage_Chart chart;
-	chart.PIs = PIs;
-	chart.populate_EPIs();
-	EPIs = chart.EPIs;
-	uncovered = chart.uncovered;
 	return 0;
 }
 
@@ -50,9 +52,11 @@ void Run_program::fillIn() {
 					temp += line[i];
 				}
 			}
-			Minterm m(stoi(temp), var_numbers);
-			Minterms.push_back(m);
-			temp = "";
+			if (temp != "") {
+				Minterm m(stoi(temp), var_numbers);
+				Minterms.push_back(m);
+				temp = "";
+			}
 		}
 		else {
 			string temp = "";
