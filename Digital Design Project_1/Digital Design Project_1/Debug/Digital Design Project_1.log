@@ -1,14 +1,27 @@
-﻿  Digital Design Project_1.cpp
-E:\Courses material\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(23,27): warning C4018: '<': signed/unsigned mismatch
-E:\Courses material\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(28,27): warning C4018: '<': signed/unsigned mismatch
-E:\Courses material\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(35,23): warning C4018: '<': signed/unsigned mismatch
-E:\Courses material\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(40,23): warning C4018: '<': signed/unsigned mismatch
+﻿  Coverage_Chart.cpp
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Coverage_Chart.cpp(5,23): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Coverage_Chart.cpp(6,27): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Coverage_Chart.cpp(19,31): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Coverage_Chart.cpp(25,23): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Coverage_Chart.cpp(27,31): warning C4018: '<': signed/unsigned mismatch
+  Digital Design Project_1.cpp
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(23,27): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(28,27): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(35,23): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(40,23): warning C4018: '<': signed/unsigned mismatch
   Dont_care_terms.cpp
-E:\Courses material\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Dont_care_terms.cpp(4,11): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Dont_care_terms.cpp(4,11): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
   Minterm.cpp
-E:\Courses material\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Minterm.cpp(4,11): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Minterm.cpp(4,11): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
+  Run_program.cpp
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Run_program.cpp(43,22): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Run_program.cpp(59,22): warning C4018: '<': signed/unsigned mismatch
+  table.cpp
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\table.cpp(9,23): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\table.cpp(13,23): warning C4018: '<': signed/unsigned mismatch
   term.cpp
-E:\Courses material\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\term.cpp(11,35): warning C4018: '<': signed/unsigned mismatch
-E:\Courses material\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\term.cpp(24,20): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\term.cpp(11,35): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\term.cpp(24,20): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
-  Digital Design Project_1.vcxproj -> E:\Courses material\Digital-Design-1\Digital Design Project_1\Debug\Digital Design Project_1.exe
+  LINK : D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Debug\Digital Design Project_1.exe not found or not built by the last incremental link; performing full link
+  Digital Design Project_1.vcxproj -> D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Debug\Digital Design Project_1.exe
