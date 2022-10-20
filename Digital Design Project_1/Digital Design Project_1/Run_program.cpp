@@ -1,5 +1,4 @@
 #include "Run_program.h"
-#include <fstream>
 
 /*Run_program::Run_program(string in) {
 	input_file_path = in;
@@ -67,9 +66,11 @@ void Run_program::fillIn() {
 					temp += line[i];
 				}
 			}
-			Dont_care_terms d(stoi(temp), var_numbers);
-			Dont_cares.push_back(d);
-			temp = "";
+			if (temp != "") {
+				Dont_care_terms d(stoi(temp), var_numbers);
+				Dont_cares.push_back(d);
+				temp = "";
+			}
 			break;
 		}
 

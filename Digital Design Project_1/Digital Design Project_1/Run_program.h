@@ -1,11 +1,7 @@
 #pragma once
-#include <iostream>
-#include "Minterm.h"
-#include "Dont_care_terms.h"
+#include <fstream>
 #include "table.h"
 #include "Coverage_Chart.h"
-#include <vector>
-
 
 using namespace std;
 class Run_program

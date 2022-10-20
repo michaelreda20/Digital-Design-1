@@ -1,10 +1,7 @@
 #pragma once
-#include <iostream>
-#include"Minterm.h"
-#include"Dont_care_terms.h"
-#include <vector>
-#include<map>
-#include<set>
+#include "Minterm.h"
+#include "Dont_care_terms.h"
+
 using namespace std;
 class table
 {
@@ -17,6 +14,5 @@ public:
     map<int, vector<term>> New;
     map<string, bool> visited;
     vector<term> PIs;
-    //map<string, bool> inserted;
 };
 
