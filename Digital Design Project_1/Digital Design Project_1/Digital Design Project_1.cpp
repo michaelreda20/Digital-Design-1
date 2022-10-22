@@ -8,12 +8,18 @@
 using namespace std;
 int main()
 {
-   
-    for (int i = 1; i < 11; i++) {
-               
+    cout << "Welcome to Quine McCLuskey Algorithm Solver: " << endl;
+    cout << "How many boolean functions you want to test? " << endl;
+    int test_cases = 0;
+    cin >> test_cases;
+    for (int i = 0; i < test_cases; i++) {
+        
         auto start = std::chrono::high_resolution_clock::now();
-        cout << "Test case #" << i << endl;
-        string path = "input" + to_string(i)+ ".txt";
+        cout << "Test case #" << i+1 << endl;
+        cout << "Please enter the path of your file: " << endl;
+
+        string path;
+        cin >> path;
         Run_program run;
         //table t;
         run.input_file_path = path;
@@ -69,9 +75,9 @@ int main()
 
             auto finish = std::chrono::high_resolution_clock::now();
             std::chrono::duration<double> elapsed = finish - start;
-            if (i == 1) {
-                std::cout << "Elapsed time: " << elapsed.count() << " s\n";
-            }
+           
+                std::cout << "It took " << elapsed.count() << " s to finish this function\n";
+           
             
             cout << "-------------------------------------------------------------------" << endl;
         }

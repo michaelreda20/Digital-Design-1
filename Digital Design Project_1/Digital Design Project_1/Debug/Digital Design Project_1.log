@@ -1,6 +1,6 @@
 ﻿  Digital Design Project_1.cpp
-D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(45,35): warning C4018: '<': signed/unsigned mismatch
-D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(50,35): warning C4018: '<': signed/unsigned mismatch
-D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(59,31): warning C4018: '<': signed/unsigned mismatch
-D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(66,31): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(51,35): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(56,35): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(65,31): warning C4018: '<': signed/unsigned mismatch
+D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Digital Design Project_1\Digital Design Project_1.cpp(72,31): warning C4018: '<': signed/unsigned mismatch
   Digital Design Project_1.vcxproj -> D:\AUC\Fall 22\Digital Design\Project\Digital-Design-1\Digital Design Project_1\Debug\Digital Design Project_1.exe
