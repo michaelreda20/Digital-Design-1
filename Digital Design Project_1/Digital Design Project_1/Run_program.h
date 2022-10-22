@@ -1,8 +1,8 @@
 #pragma once
-#include <iostream>
-#include "Minterm.h"
-#include "Dont_care_terms.h"
-#include <vector>
+#include <fstream>
+#include "table.h"
+#include "Coverage_Chart.h"
+
 using namespace std;
 class Run_program
 {
@@ -10,9 +10,12 @@ public:
 	string input_file_path;
 	vector<Minterm> Minterms;
 	vector<Dont_care_terms> Dont_cares;
-	Run_program(string file);
-	void Run();
+	int Run();
 	void fillIn();
-	
+	vector<term> PIs;
+	vector<term> EPIs;
+	vector<term> uncovered;
+	map<int, string> errors;
+//	Run_program();
 };
 
