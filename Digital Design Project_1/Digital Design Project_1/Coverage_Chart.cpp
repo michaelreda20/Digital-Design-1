@@ -1,5 +1,5 @@
 #include "Coverage_Chart.h"
-
+// this function generates the essential prime implicannts and the uncovered minterms
 void Coverage_Chart::populate_EPIs()
 {
     for (int i = 0; i < PIs.size(); ++i) {

@@ -1,8 +1,8 @@
 #include "Run_program.h"
 
-/*Run_program::Run_program(string in) {
-	input_file_path = in;
-}*/
+
+//this function is reponsible for running the different steps of the program starting from getting the input, generating the 
+//prime implicants, the essential prime implicants and the uncovered minterms
 int Run_program::Run() {
 	fillIn();
 	if (!Minterms.size() == 0) {
@@ -21,11 +21,8 @@ int Run_program::Run() {
 	return 0;
 }
 
-/*Run_program::Run_program()
-{
 
-}*/
-
+// this function reads and validate the input files
 void Run_program::fillIn() {
 
 	ifstream input;

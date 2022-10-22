@@ -3,7 +3,7 @@
 table::table() {
 ///
 }
-
+//this function generates the prime implicants and adds to each prime implicants the minterms and the dont care terms it covers
 void table::Calculate() {
 
     for (int i = 0; i < minterms.size(); i++) {

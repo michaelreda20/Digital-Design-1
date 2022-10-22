@@ -1,5 +1,6 @@
 #include "term.h"
-
+// this function initialize the term's variable representation and Binary Representation using its number and the number of the 
+// variables
 void term::Initialize() {
 	Binary_Representation = "";
 	long temp = number;
@@ -17,7 +18,7 @@ void term::Initialize() {
 	boolean_expression();
 	count_ones();
 }
-
+// This function transforms the binary representation of the term to a boolean expression
 
 void term::boolean_expression() {
 	Var_Representation = "";
@@ -29,7 +30,7 @@ void term::boolean_expression() {
 		}
 	}
 }
-
+// this function count the number of ones in the term
 void term::count_ones() {
 	for (int i = 0; i < var_numbers; i++) {
 		if (Binary_Representation[i] == '1') {
@@ -37,7 +38,7 @@ void term::count_ones() {
 		}
 	}
 }
-
+// this function calculates the logic distance between two terms
 pair<int, int> term::calc_distance(term const& another){
 	int distance= 0;
 	pair<int, int> res;

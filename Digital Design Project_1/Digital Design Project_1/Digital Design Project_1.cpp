@@ -3,10 +3,15 @@
 #include <iostream>
 #include "table.h"
 #include "Run_program.h"
+#include <time.h>
+#include <chrono> 
 using namespace std;
 int main()
 {
+   
     for (int i = 1; i < 11; i++) {
+               
+        auto start = std::chrono::high_resolution_clock::now();
         cout << "Test case #" << i << endl;
         string path = "input" + to_string(i)+ ".txt";
         Run_program run;
@@ -61,11 +66,18 @@ int main()
             for (int i = 0; i < run.uncovered.size(); ++i) {
                 cout << run.uncovered[i].number << endl;
             }
+
+            auto finish = std::chrono::high_resolution_clock::now();
+            std::chrono::duration<double> elapsed = finish - start;
+            if (i == 1) {
+                std::cout << "Elapsed time: " << elapsed.count() << " s\n";
+            }
+            
             cout << "-------------------------------------------------------------------" << endl;
         }
 
     }
-    
+    system("pause");
 }
 
 
